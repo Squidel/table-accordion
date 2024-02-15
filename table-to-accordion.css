@@ -1,0 +1,257 @@
+
+.row .table-responsive {
+	max-width: calc(100vw - 80px) !important;
+}
+
+/* CSS to disable scrolling */
+.no-scroll {
+	overflow: hidden;
+}
+
+.table-responsive table th.number-col {
+	min-width: 200px !important;
+}
+.accordion-button {
+	width: 100% !important;
+	margin-bottom: 0px !important;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'open_sansregular';
+	text-transform: capitalize;
+	border-radius: 0.375rem;
+}
+/*.acc-bg, .acc-bg.collapsed {
+	filter: grayscale(60%);
+	background: #800080 !important;
+}*/
+
+.acc-bg, .acc-bg.collapsed {
+	filter: grayscale(60%);
+	background: #4f53c4 !important;
+}
+
+.acc-bg:not(.collapsed) {
+	filter: grayscale(0%);
+}
+
+
+.acc-alt-bg:not(.collapsed) {
+	filter: grayscale(0%);
+}
+/*.acc-alt-bg, .acc-alt-bg.collapsed {
+	filter: grayscale(60%);
+	background: #9a2ce9 !important;
+}
+*/
+.acc-alt-bg, .acc-alt-bg.collapsed {
+	filter: grayscale(60%);
+	background: #1c3abd !important;
+}
+
+
+#load-next, #load-prev {
+	display: inline-block;
+	padding: 8px 15px !important;
+	margin: 2px;
+	border-radius: 0.375rem;
+	/*background-color: #9b155a;*/
+	color: #fff;
+}
+
+#load-next {
+	background-color: #109262;
+}
+
+#load-prev {
+	background-color: #565656;
+}
+
+
+.table-accordion-body {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	transition: 0.3s;
+	padding: 10px;
+	margin: 5px;
+	background-color: aliceblue;
+}
+	.table-accordion-body:hover {
+		box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	}
+
+.accordion-body {
+	background-color: #637381;
+	border-radius: 10px;
+	padding: 5px 0px;
+}
+
+.table-accordion-content, .table-accordion-content-action {
+	border-bottom: 2px solid aliceblue;
+	background-color: #637381;
+	text-align: center;
+	font-weight: bold;
+	padding: 4px;
+	margin: 5px auto !important;
+	width: 83.33333333%;
+	color: white;
+}
+
+.table-accordion-content-action input{
+	height: 30px;
+	width: 30px;
+}
+
+
+.triggered-event {
+	background-color: aliceblue;
+	padding: 4px;
+	border-radius: 4px;
+	color: black;
+}
+.table-accordion-content-action, .triggered-event {
+	text-align: center;
+	margin: 10px;
+	border-bottom: none;
+}
+	.table-accordion-hidden, .triggered-event-none{
+		display: none !important;
+	}
+
+.table-accordion-content-action a, .table-accordion-content-action button, .triggered-event {
+	background-color: aliceblue;
+	background-image: none;
+	color: black;
+	border: 0;
+}
+
+@media screen and (max-width: 576px){
+	.well a, .well button {
+		position: relative;
+		z-index: 9;
+		margin-bottom: 15px;
+	}
+	.well > .btn{
+		margin-bottom: 20px !important;
+		position:relative;
+		z-index: 2;
+	}
+	.well > .bootstrap-table{
+		margin-top:20px !important;
+	}
+	.table-accordion-content-action {
+		text-align: center;
+		margin: 10px;
+	}
+
+		.table-accordion-content-action a, .triggered-event {
+			background-color: aliceblue;
+			background-image: none;
+			color: black;
+			border: 0;
+			box-shadow: inset 0 1px 0 rgba(255,255,255,.15), 0 1px 1px rgba(0,0,0,.075);
+			padding: 5px 10px;
+			font-size: 12px;
+			line-height: 1.5;
+			border-radius: 3px;
+		}
+
+	.btn-link[disabled] {
+		color: rgb(216 209 209) !important;
+	}
+
+	.table-responsive #Paging{
+		display: none;
+	}
+
+	.jstree-leaf {
+		height: 50px;
+	}
+
+		.jstree-leaf a.jstree-hovered {
+			height: 50px;
+		}
+
+		.jstree-leaf a.jstree-clicked {
+			height: 50px;
+		}
+}
+
+.dynamic-element {
+	border-bottom: 2px solid aliceblue;
+	background-color: #637381;
+	text-align: center;
+	font-weight: bold;
+	padding: 4px;
+	margin: 5px auto !important;
+	width: 83.33333333%;
+	color: white;
+	/*Dynamic element previously had padding 5px 20px, don't remember the relevance of it*/
+}
+
+	.dynamic-element p {
+		font-size: 12px;
+		font-weight: normal;
+		text-align: center;
+		color: #000;
+	}
+
+	.dynamic-element .input-group {
+		width: 100% !important;
+	}
+
+p.table-accordion-content {
+	font-size: 14px;
+}
+
+.table-accordion-content-action span{
+	margin: 0 !important;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.empty-cell{
+		display: none !important;
+	}
+}
+
+#PreEvaluationTable{
+	display: block !important;
+}
+
+.modal-dialog {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+@media screen and (min-width: 768px) {
+	.modal-dialog {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.modal-dialog {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.modal-dialog {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (min-width: 1920px) {
+	.modal-dialog {
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
