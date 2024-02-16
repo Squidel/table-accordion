@@ -1,6 +1,6 @@
 # Table-Accordion
 
-A jquery library that transforms tables (primarily bootstrap tables) to accordions. The repo consists of the css and jquery file needed to convert tables to accordion, attempting to keep all table events (defined bootstrap events).
+A jquery library that transforms tables (primarily bootstrap tables) to accordions. The repo consists of the css and jquery file needed to convert tables to accordion, attempting to keep all table events (defined bootstrap events). This transformation is active only in mobile views (views loaded with mobile dimensions)
 
 ## Installation
 
@@ -19,6 +19,16 @@ TBD
 Table elements with the classname table.
 if tables has this class, it attempts to get dom elements for the tables and convert said tables, to a bootstrap accordion
 ```
+
+## Example Usage
+
+##### Original Table
+![alt text](image.png)
+
+##### Mobile View
+![alt text](image-2.png)
+
+![alt text](image-1.png)
 
 ## Contributing
 
